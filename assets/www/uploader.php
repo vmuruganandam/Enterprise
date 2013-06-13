@@ -13,7 +13,11 @@
 <html>
 <body>
 
+<<<<<<< HEAD
 <form action="index1.php" method="post"
+=======
+<form action="index.php" method="post"
+>>>>>>> f016adb81a625d6955a99744fde7cd929d710d8e
 enctype="multipart/form-data">
 <label for="file">Filename:</label>
 <input type="file" name="file" id="file"><br>
@@ -24,12 +28,20 @@ enctype="multipart/form-data">
 
 
 <?php
+<<<<<<< HEAD
 chdir("uploaded/");
 $current = getcwd();
 $files1 = scandir($current);
 
 
 //print_r($files1);
+=======
+$dir = 'uploaded/';
+$files1 = scandir($dir);
+
+
+print_r($files1);
+>>>>>>> f016adb81a625d6955a99744fde7cd929d710d8e
 ?>
 
 <h><b>Delete an Application</b></h>
@@ -37,9 +49,15 @@ $files1 = scandir($current);
 <form id="form" action="deleteit.php" method="post">
 <select id="filedeletion" name="deleteditem">
 	<?php for($i=2;$i<sizeof($files1);$i++) {
+<<<<<<< HEAD
 		echo "<option value=\"$files1[$i]\">$files1[$i]</option>";
 	}
 	?>
+=======
+
+		echo "<option value=\"$files1[$i]\">$files1[$i]</option>";
+	}?>
+>>>>>>> f016adb81a625d6955a99744fde7cd929d710d8e
 </select>
 <input type="submit" name="submit2" value="Delete">
 </form>
@@ -51,6 +69,7 @@ $files1 = scandir($current);
 </html>
 <div id="txtHint"><b></b></div>
 
+<<<<<<< HEAD
 <?php 
 echo "<br>" . "List of all Uploaded Files: " . "<br>";
 $printFiles = scandir($current);
@@ -58,6 +77,9 @@ for($x = 2; $x < sizeof($printFiles); $x++)
 	echo $printFiles[$x] . "<br>";
 
 ?>
+=======
+
+>>>>>>> f016adb81a625d6955a99744fde7cd929d710d8e
 
 
 </html>

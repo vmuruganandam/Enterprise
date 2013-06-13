@@ -26,7 +26,11 @@
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
 
     <!-- <access origin="https://example.com" /> allow any secure requests to example.com -->
+<<<<<<< HEAD
     <access origin="http://genterprise.web44.net/" subdomains="true" /> 
+=======
+    <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
+>>>>>>> f016adb81a625d6955a99744fde7cd929d710d8e
     <access origin=".*"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
