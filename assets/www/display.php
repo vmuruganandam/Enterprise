@@ -1,12 +1,20 @@
 <!doctype html>
 <html>
+<?php
+session_start();
+if ($_SESSION['logged'] == true)
+	{
+		?>
 <head>
     <script type="text/javascript" charset="utf-8" src = "iscroll-lite.js"></script>
         <script type="text/javascript" charset="utf-8" src = "http://code.jquery.com/jquery-1.10.1.js"></script>
         <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/displaystyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+
 <meta name="apple-mobile-web-app-capable" content="yes" />
+
 </head>
 
 <body>
@@ -33,6 +41,7 @@ $('#tab-bar a').on('click', function(e){
     <div id="main-content">
     <div id="pages">
     <div id="map" class="current">
+    <br><a href='logout.php'>Logout</a><br>
     <?php
 
 
@@ -93,8 +102,13 @@ $('#tab-bar a').on('click', function(e){
 
 
 </body>
-
-
+ <?php 
+	}
+else
+{	
+	header("Location: login.php");
+}
+?>
 
 
 

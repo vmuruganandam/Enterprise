@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+2<html>
+3
+4<head>
+5    <meta name="viewport" content="width=320; user-scalable=no" />
+6    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+7    <title>Auth Demo</title>
+8    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile.structure-1.0rc2.css" type="text/css" charset="utf-8" />
+9    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+10    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+11    <script src="jquery.mobile/jquery.mobile-1.10.1.min.js"></script>
+12    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+13</head>
+14
+15<body onload="init()">
+16    
+17<div id="loginPage" data-role="page">
+18
+19    <div data-role="header">
+20        <h1>Auth Demo</h1>
+21    </div>
+22
+23    <div data-role="content">    
+24
+25        <form id="loginForm">
+26        <div data-role="fieldcontain" class="ui-hide-label">
+27            <label for="username">Username:</label>
+28            <input type="text" name="username" id="username" value="" placeholder="Username" />
+29        </div>
+30
+31        <div data-role="fieldcontain" class="ui-hide-label">
+32            <label for="password">Password:</label>
+33            <input type="password" name="password" id="password" value="" placeholder="Password" />
+34        </div>
+35
+36        <input type="submit" value="Login" id="submitButton">
+37        </form>
+38        
+39    </div>
+40
+41    <div data-role="footer">
+42        <h4>&copy; Camden Enterprises</h4>
+43    </div>
+44
+45</div>
+46
+47</body>
+48</html>

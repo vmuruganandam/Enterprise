@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+		    <script charset="utf-8" src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		    <script charset="utf-8" src = "cordova-2.7.0.js"></script>
+
+
+<script type="text/javascript">
+
+ 
+ 
+/*function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+  
+  
+  var a = document.getElementById("user");
+var b = document.getElementById("pass");
+
+
+var str = "a="+a.value+"&b="+b.value;
+  
+xmlhttp.open("POST","http://genterprise.web44.net/sample.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+xmlhttp.send(str);
+}*/
+</script>
+<script>
+
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+     function onDeviceReady(){
+         window.location.href = "http://genterprise.web44.net/login.php";
+     }
+     
+
+
+
+</script>
+
+</head>
+
+
+<body>
+<input type="text" id="user"/>
+<input type="text" id="pass"/>
+
+<div id="myDiv"><h2>Let AJAX change this text</h2></div>
+<button type="button" onclick="onDeviceReady()">Connect to App Server</button>
+
+
+</body>
+</html>
+
